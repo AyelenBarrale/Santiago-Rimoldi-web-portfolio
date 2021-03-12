@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+   <!--Fonts-->
+   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+   <!--Icons-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./../assets/css/style.css">
+
+    <!--SEO-->
+    <meta name="author" content="Ayelen Barrale. Web Development"/>
+    <meta name="copyright" content="Rimoldi Santiago 2021"/>
+    <meta name="keywords" content="graphic designer, photo manipulation portfolio, branding design, graphic design, photoshop artist">
+    <meta name="description" content="Graphic design portfolio where you can check out Santiago's latest works and works in progress. In this page, you can contact him.">
+    <link rel="shortcut icon" href="../Desafio-07-sass/img/Rimoldi_Graphic_Designer.ico" type="image/x-icon">
+    <title>Contact Santiago Rimoldi, graphic designer and photoshop artist</title>
+    <!--Protocolo Open Graph-->
+   <meta property= "og-title" content="Rimoldi's Graphic Design">
+   <meta property= "og-description" content="Graphic Designer especialize in Photo Manipulation and Branding Design. Check out his latest works.">
+   <meta property= "og-image" content= "https://www.behance.net/gallery/72176955/The-Lighthouse" > <!--puse esta url como muestra pero luego cambiaré a la que corresponde-->
+   <meta property= "og-url" content= "https://santiagorimoldi.com" >
+   <meta property= "og-type" content= "website" >
+   <meta property= "og-locale" content= "en_EN" >
+  </head>
+  <body>
+      <!--Inicio de header-->
+    <header>
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="./../index.html"><img src="./../img/Logo_Rimoldi.svg" alt="Rimoldi design' logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./../views/works.html">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../views/wip.html">W.I.P.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../views/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./../views/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+   <!--Fin de Header-->
+
+    <!--Inicio de Form Contacto-->
+    <section>
+      <div class="contact-container">
+        <div class="contact-item item-1">
+          <h3>Time to chat!</h3>
+        </div>
+        <div class="contact-item">
+          <h1>Contact me</h1>
+        </div class="contact-item">
+          <p>To contact me for project, enquiries, please fill this contact form</p>
+        <div>
+      </div>
+  <!--formulario de contacto-->
+      <div>
+        <form action="SERVER" method="POST" class="form">
+          <div class="form-row">
+            <label for="full-name"></label>
+            <input type="name" name="name" id="full-name" required placeholder="Name">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" required placeholder="Email Address">
+            <label for="subject"></label>
+            <input type="subject" name="subject" id="subject" required placeholder="Subject">
+            <label for="mensaje"></label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="8" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>  
+    </section>
+  <!--Fin de Form Contacto-->
+
+   <!--Inicio de Footer-->
+   <footer class="footer-container">
+        <div class="footer-item-1">
+            <h4 class="h4-text">2021 | Santiago Rimoldi | All rights reserved</h4>
+        </div>
+        <nav class="footer-item">
+            <div class="footer-item-item">
+                <a href="https://www.behance.net/rimoldi" target="_blank"><i class="fab fa-behance"></i></a>
+            </div>
+            <div class="footer-item-item">
+                <a href="https://www.linkedin.com/in/rimoldi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-item-item">
+                <a href="https://vimeo.com/rimoldi" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+            </div>
+            <div class="footer-item-item">
+                <a href="https://www.instagram.com/rimoldi.design/" target="_blank"><i class=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+</footer>
+<!--Fin de Footer-->
+  </body>
+</html>

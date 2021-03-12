@@ -1,0 +1,20 @@
+/* Footer */
+.footer-container {
+    background-color: $bg-color-2;
+    @include grid-hor (10fr 2fr, 5% 10% 2% 10%);
+    .footer-item-1 .h4-text {
+        font-size: $h4;
+    }
+}
+.footer-item {
+    @extend %grid;
+    background: transparent;
+    i {
+        &:hover {
+            @include transform-hov (1.5, $hov-color);
+        }
+    }
+    a {
+        @include link ($p);
+    }
+}

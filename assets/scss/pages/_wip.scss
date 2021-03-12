@@ -1,0 +1,17 @@
+/* wip page */
+
+.wip {
+    margin: 10% 5% 10% 5%;
+    .date {
+        font-size: $h3;
+        padding-top: 2%;
+        text-align: end;
+    }
+}
+.video-container {
+    @extend %iframe-responsive;
+}
+
+.video-description {
+    padding-top: 2%;
+}

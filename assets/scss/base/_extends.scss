@@ -1,0 +1,48 @@
+%flex {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+%navlink {
+    color: $txt-color; 
+    text-decoration: none;
+    font-size: $p;
+    &:hover {
+        color: $hov-color;
+    }
+}
+
+%grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+
+%transform-hov {
+    transform: scale(1.1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+%gridx4 {
+    margin: 10% 25% 5% 15%;
+    display: grid;
+    grid-template-columns: 0.25fr 1.75fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+%iframe-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

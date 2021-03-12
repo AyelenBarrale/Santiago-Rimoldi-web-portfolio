@@ -1,0 +1,80 @@
+/* HOME */
+/* About home */
+.about-container {
+    @include grid-2 (10%);
+}
+.grid-item {
+    text-align: left;
+}
+.item-1 {
+    grid-column: 1 / 3;
+}
+.h3-text {
+    @include text ($h3, normal);
+}
+
+/* Work home */
+.work-container {
+    background-color: $bg-color-2;
+    padding-bottom: 10%;
+}
+.work-row {
+    padding: 5% 1%;
+    .nav-item {
+        @include link ($p);
+        border: none;
+        background-color: transparent;
+        outline: 0;
+        
+        &:focus, :active {
+            text-decoration: none;
+            outline: 0;
+            border: none;
+            color: $hov-color;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+} 
+
+.gridwork {
+    @extend %grid;
+    .gridwork-item img {
+        width: 100%;
+    }
+    .gridwork-item:hover {
+        @extend %transform-hov;
+    }
+}
+
+
+
+
+/* Contact home */
+.contact-container {
+    @include grid-2 (10%);
+    .contact-item {
+        text-align: left;
+    }
+}
+
+/* Form home */
+.form-row {
+    @extend %flex;
+    margin: 5% 0;
+}
+
+.form-row input[type="name"], .form-row input[type="email"], .form-row input[type="subject"], .form-row textarea {
+    @include form (0.5px solid rgba(235, 235, 230, 0.87), 0.5% 0%, 100%);
+}
+.form-row input[type="name"]::placeholder, .form-row input[type="email"]::placeholder, .form-row input[type="subject"]::placeholder, .form-row textarea::placeholder {
+        color: $ph-color;
+        padding: 2% 1%;
+    }
+.form-row button {
+    @include button (2%);
+    &:hover {
+        @extend %transform-hov;
+        background-color: $hov-color;
+    }
+}

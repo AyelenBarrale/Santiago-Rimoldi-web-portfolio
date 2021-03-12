@@ -1,0 +1,22 @@
+/* Base */
+@import "../base/variables";
+@import "../base/fonts";
+@import "../base/extends";
+@import "../base/mixins";
+@import "../base/normalize";
+
+/* Components */
+@import "../components/header";
+@import "../components/navbar";
+@import "../components/main";
+@import "../components/footer";
+
+/* Pages */
+@import "../pages/home";
+@import "../pages/work";
+@import "../pages/wip";
+@import "../pages/about";
+@import "../pages/contact";
+
+/* Queries */
+@import "../mediaQuery/query";
