@@ -19,12 +19,12 @@
   cursor: pointer;
 }
 
-.video-container {
+.work-mainframe .workbanner-container, .work-mainframe .workposter-container, .video-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
 }
-.video-container iframe {
+.work-mainframe .workbanner-container iframe, .work-mainframe .workposter-container iframe, .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -229,6 +229,25 @@ body {
 
 h3 {
   font-size: 18px;
+}
+
+.work-mainframe {
+  margin: 5% 10% 5% 10%;
+}
+.work-mainframe .container-intro-sr {
+  padding-bottom: 5%;
+}
+.work-mainframe .container-intro-sr .title-1 h2 {
+  font-size: 5rem;
+  line-height: 4.5rem;
+}
+.work-mainframe .container-intro-sr .service-title {
+  padding-top: 5%;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.work-mainframe .workdevelop-container {
+  padding: 3% 0;
 }
 
 /* Queries */
