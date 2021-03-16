@@ -1,11 +1,12 @@
 /* navbar */
-nav {
+.navbar {
     background: $nav-bg-color;
     padding: 0.5% 10%;
     img {
         width: 50%;
     }
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: $hov-color;
 }

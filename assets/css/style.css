@@ -45,11 +45,11 @@ body {
 
 /* Components */
 /* navbar */
-nav {
+.navbar {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7035189076) 0%, rgba(0, 0, 0, 0) 100%);
   padding: 0.5% 10%;
 }
-nav img {
+.navbar img {
   width: 50%;
 }
 
