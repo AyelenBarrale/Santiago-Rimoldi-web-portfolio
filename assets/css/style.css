@@ -227,6 +227,10 @@ nav img {
   margin: 10% 10% 20% 10%;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 /* Queries */
 /* MEDIA QUERY */
 /* home mobile */
