@@ -37,7 +37,7 @@
     }
 } 
 
-.gridwork {
+/*.gridwork {
     @extend %grid;
     .gridwork-item img {
         width: 100%;
@@ -45,7 +45,47 @@
     .gridwork-item:hover {
         @extend %transform-hov;
     }
+}*/
+
+.gridwork {
+    position: relative;
+    @extend %grid;
+    .gridwork-item {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        .capa-txt {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding-top: 40%;
+            color: #eaeaea;
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: $p;
+            }
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+                transition: all 800ms;
+                z-index: 2;
+            }
+        }
+        &:hover img {
+            transform: scale(1.4);
+            transition: all 1s;
+            z-index: 1;
+        }
+    }
 }
+
 
 
 
