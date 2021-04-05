@@ -2,10 +2,13 @@
 
 .wip {
     margin: 10% 5% 10% 5%;
-    .date {
+    .date .year {
         font-size: $h3;
         padding-top: 2%;
         text-align: end;
+    }
+    .date {
+        color: $txt-color-2;
     }
 }
 .video-container {

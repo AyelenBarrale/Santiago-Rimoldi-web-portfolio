@@ -1,17 +1,20 @@
 /* HOME */
 /* About home */
 .about-container {
-    @include grid-2 (10%);
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    grid-template-rows: auto auto;
+    margin: 16%;
+    .item-1 {
+        padding-top: 2%;
+        .ab-h3-text {
+            @include text ($h1, 500);
+            color: $txt-color-2;
+        }
+    }
 }
-.grid-item {
-    text-align: left;
-}
-.item-1 {
-    grid-column: 1 / 3;
-}
-.h3-text {
-    @include text ($h3, normal);
-}
+
+
 
 /* Work home */
 .work-container {
@@ -26,13 +29,16 @@
         background-color: transparent;
         outline: 0;
         
-        &:focus, :active {
+        &:focus {
             text-decoration: none;
             outline: 0;
             border: none;
-            color: $hov-color;
+            color: $txt-color-2;
             background-color: transparent;
             box-shadow: none;
+        }
+        button:active {
+            color: $txt-color-2;
         }
     }
 } 
@@ -92,29 +98,63 @@
 
 /* Contact home */
 .contact-container {
-    @include grid-2 (10%);
+    @include grid-2 (16%);
     .contact-item {
         text-align: left;
+    }
+    .item-form {
+        padding-top: 5%;
+    }
+}
+
+.h3-text {
+    color: $txt-color-2;
+    font-size: $p;
+}
+.p-text {
+    font-size: $p;
+    color: $txt-color;
+    padding-top: 1%;
+}
+
+.line {
+    @extend %line;
+}
+
+.contact-item {
+    .h1-text {
+        color: $txt-color;
+        font-size: $h1;
+        font-weight:500; 
     }
 }
 
 /* Form home */
-.form-row {
-    @extend %flex;
-    margin: 5% 0;
+.form {
+    .form-row {
+        @extend %flex-rev;
+        margin: 3% 0 5% 0;
+    }
+    
+    .form-row input[type="name"], .form-row input[type="email"], .form-row input[type="subject"], .form-row textarea {
+        @include form (0.5px solid rgba(235, 235, 230, 0.87), 0.5% 0%, 100%);
+        padding: 1%;
+        border-radius: 3px;
+    }
+    .form-row input[type="name"]::placeholder, .form-row input[type="email"]::placeholder, .form-row input[type="subject"]::placeholder, .form-row textarea::placeholder {
+            color: $bg-color-2;
+            padding: 1%;
+        }
+    .form-row button {
+        @include button (1% 8%);
+        color: $txt-color;
+        background-color: $txt-color-2;
+        &:hover {
+            cursor: pointer;
+            background-color: $hov-color;
+            color: $bg-color-2;
+        }
+    }
 }
 
-.form-row input[type="name"], .form-row input[type="email"], .form-row input[type="subject"], .form-row textarea {
-    @include form (0.5px solid rgba(235, 235, 230, 0.87), 0.5% 0%, 100%);
-}
-.form-row input[type="name"]::placeholder, .form-row input[type="email"]::placeholder, .form-row input[type="subject"]::placeholder, .form-row textarea::placeholder {
-        color: $ph-color;
-        padding: 2% 1%;
-    }
-.form-row button {
-    @include button (2%);
-    &:hover {
-        @extend %transform-hov;
-        background-color: $hov-color;
-    }
-}
+

@@ -49,7 +49,7 @@
                   <a class="nav-link" href="./views/works.html">Works</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./views/wip.html">W.I.P.</a>
+                  <a class="nav-link" href="./views/wip.html">WIP</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./views/about.html">About</a>
@@ -90,13 +90,13 @@
     <section class="about-container">
         <!--resumen abreviado sobre el diseñador y su experiencia laboral-->
         <div class="about-item item-1">
-            <h3 class="h3-text">About</h3>
-        </div>
-        <div class="about-item">
+            <h3 class="ab-h3-text">About</h3>
             <h1 class="h1-text">Santiago Rimoldi</h1>
+            <div class="line"></div>
         </div>
         <div class="about-item item-description">
-            <p class="p-text">Undergraduate in Graphic Design in 2013, Santiago has plenty of experience in several areas of computer graphics, accumulating functions in motion graphics, graphic design or post-production. Check out his work on this online portfolio!</p>
+            <p class="p-text">Undergraduate in Graphic Design in 2013, Santiago has plenty of experience in several areas of computer graphics, accumulating functions in motion graphics, graphic design or post-production. 
+              <br></br>10 years of experience in the design area, he has also worked both independently, as well as in collaboration with other studios creating the post-production of images for the archviz and aircraft market, all around the world.</p>
         </div>
     </section>
     <!--Fin de About-->
@@ -187,7 +187,7 @@
       $(document).ready(function(){
   
       $(".nav-item").click(function(){
-          var value = $(this).attr('data-filter');
+          let value = $(this).attr('data-filter');
           
           if(value == "all")
           {
@@ -218,10 +218,10 @@
       <div class="contact-container">
         <div class="contact-item item-1">
           <h3 class="h3-text">Don't be shy, say hi!</h3>
-        </div>
-        <div class="contact-item">
           <h2 class="h1-text">Contact me</h2>
-        </div class="contact-item">
+          <div class="line"></div>
+        </div>
+        <div class="contact-item item-form">
           <p class="p-text">To contact me for project enquiries, please fill this contact form</p>
         <div>
       </div>
@@ -237,7 +237,7 @@
             <input type="subject" name="subject" id="subject" required placeholder="Subject">
             <label for="mensaje"></label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="8" placeholder="Message"></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit">Send</button>
           </div>
         </form>
       </div>  
