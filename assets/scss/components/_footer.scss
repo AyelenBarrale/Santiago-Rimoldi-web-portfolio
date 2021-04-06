@@ -2,6 +2,10 @@
 .footer-container {
     background-color: $bg-color-2;
     @include grid-hor (10fr 2fr, 36px 190px);
+    /*display: grid;
+    grid-template-columns: 10fr 2fr;
+    padding: 5%;
+    place-content: center;*/
     .footer-item-1 .h4-text {
         font-size: $h4;
     }

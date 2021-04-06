@@ -66,6 +66,10 @@ body {
   grid-template-columns: 10fr 2fr;
   padding: 36px 190px;
   place-content: center;
+  /*display: grid;
+  grid-template-columns: 10fr 2fr;
+  padding: 5%;
+  place-content: center;*/
 }
 .footer-container .footer-item-1 .h4-text {
   font-size: 16px;
@@ -333,6 +337,10 @@ body {
     margin-top: 30%;
   }
 
+  .line {
+    width: 250px;
+  }
+
   .work-container {
     margin-top: 15%;
   }
@@ -369,6 +377,8 @@ body {
   .footer-container {
     display: block;
     text-align: center;
+    padding: 5%;
+    place-content: center;
   }
 
   .footer-item {
