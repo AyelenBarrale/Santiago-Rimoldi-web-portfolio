@@ -341,16 +341,8 @@ body {
     width: 250px;
   }
 
-  .work-container {
-    margin-top: 15%;
-  }
-  .work-container .nav-item {
-    display: none;
-  }
-  .work-container .title-work {
-    display: flex;
-    justify-content: flex-start;
-    padding: 5% 5%;
+  .work-container-2 {
+    padding: 20% 0;
   }
 
   .gridwork {
