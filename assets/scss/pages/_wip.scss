@@ -1,14 +1,23 @@
 /* wip page */
-
 .wip {
-    margin: 10% 5% 10% 5%;
-    .date .year {
-        font-size: $h3;
+    margin: 10% 0;
+    .year {
+        font-size: $p;
+        font-weight: 400;
         padding-top: 2%;
         text-align: end;
     }
     .date {
+        font-size: $p;
+        font-weight: 400;
+        padding-top: 2%;
+        text-align: end;
         color: $txt-color-2;
+    }
+    .title {
+        font-size: $h1;
+        font-weight: 600;
+        padding-bottom: 2%;
     }
 }
 .video-container {
@@ -17,4 +26,6 @@
 
 .video-description {
     padding-top: 2%;
+    font-size: $p;
+    font-weight: 400;
 }

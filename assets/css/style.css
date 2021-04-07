@@ -280,19 +280,31 @@ body {
 
 /* wip page */
 .wip {
-  margin: 10% 5% 10% 5%;
+  margin: 10% 0;
 }
-.wip .date .year {
-  font-size: 10px;
+.wip .year {
+  font-size: 18px;
+  font-weight: 400;
   padding-top: 2%;
   text-align: end;
 }
 .wip .date {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 2%;
+  text-align: end;
   color: #808080;
+}
+.wip .title {
+  font-size: 34px;
+  font-weight: 600;
+  padding-bottom: 2%;
 }
 
 .video-description {
   padding-top: 2%;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .about-container-2 {
@@ -358,6 +370,9 @@ body {
   .wip .date {
     text-align: start;
   }
+  .wip .year {
+    text-align: start;
+  }
 
   .contact-container {
     margin-top: 25%;
@@ -391,6 +406,9 @@ body {
   }
 
   .wip .date {
+    text-align: start;
+  }
+  .wip .year {
     text-align: start;
   }
 

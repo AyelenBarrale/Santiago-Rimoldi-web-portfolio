@@ -34,6 +34,9 @@
         .date {
         text-align: start;
         } 
+        .year {
+            text-align: start;
+        } 
     }
 
     //contact home and page mobile
@@ -69,8 +72,13 @@
         }
     }
     //wip page tablet
-    .wip .date {
-        text-align: start;
+    .wip {
+        .date {
+            text-align: start;
+        }
+        .year {
+            text-align: start;
+        }
     }
 
     //line
