@@ -13,12 +13,12 @@
   place-items: center;
 }
 
-.work-mainframe .workbanner-container, .work-mainframe .workposter-container, .video-container {
+.sunsrace-container .workbanner-container, .video-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
 }
-.work-mainframe .workbanner-container iframe, .work-mainframe .workposter-container iframe, .video-container iframe {
+.sunsrace-container .workbanner-container iframe, .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -318,24 +318,9 @@ body {
   margin: 10% 16% 20% 16%;
 }
 
-.work-mainframe {
-  margin: 5% 10% 5% 10%;
+.sunsrace-container {
+  margin: 0% 18% 6% 18%;
 }
-.work-mainframe .container-intro-sr {
-  padding-bottom: 5%;
-}
-.work-mainframe .container-intro-sr .title-1 h2 {
-  font-size: 2.5rem;
-}
-.work-mainframe .container-intro-sr .service-title {
-  padding-top: 5%;
-  font-size: 1.2rem;
-  font-weight: bolder;
-}
-.work-mainframe .workdevelop-container {
-  padding: 3% 0;
-}
-
 .intro-container .intro-left .intro-title .intro-h1 {
   font-size: 34px;
   font-weight: 600;

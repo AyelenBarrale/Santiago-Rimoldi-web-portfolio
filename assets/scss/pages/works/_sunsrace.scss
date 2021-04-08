@@ -1,27 +1,8 @@
 //Sunsrace Page
-.work-mainframe{
-    margin: 5% 10% 5% 10%;
-    .container-intro-sr {
-        padding-bottom: 5%;
-        .title-1 {
-            h2 {
-                font-size: 2.5rem;
-            }
-        }
-        .service-title {
-            padding-top: 5%;
-            font-size: 1.2rem;
-            font-weight:bolder;
-        }
-    }
-    
-    .workbanner-container, .workposter-container {
+.sunsrace-container {
+    margin: 0% 18% 6% 18%;
+    .workbanner-container {
         @extend %iframe-responsive;
     }
-
-    .workdevelop-container {
-        padding: 3% 0;
-    }
 }
-
 
