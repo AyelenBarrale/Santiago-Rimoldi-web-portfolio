@@ -1,0 +1,38 @@
+.intro-container {
+    @extend %margin-container;
+    .intro-left {
+        .intro-title {
+            .intro-h1 {
+                font-size: $h1;
+                font-weight: 600;
+                color: $txt-color;
+                }
+            .intro-h2 {
+                font-size: $h1;
+                font-weight: 600;
+                color: $txt-color-2;
+            }
+        } 
+        .details-work {
+            padding-top: 5%;
+            .details-1 {
+                font-size: $h3;
+                font-weight: 400;
+                color: $txt-color;
+            }
+            .details-2 {
+                font-size: $h3;
+                font-weight: 400;
+                color: $txt-color-2;
+                padding-left: 1%;
+            }
+        }
+    }
+}
+.logos-container {
+    margin: 0% 18% 6% 18%;
+    img {
+        width: 100%;
+    }
+}
+
