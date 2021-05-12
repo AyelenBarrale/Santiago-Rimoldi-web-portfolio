@@ -65,8 +65,8 @@ let worksList = [
     }
 ];
 
-
-const contenedorWorks = document.getElementById("workGrid");
+/////// Versión Vanilla JS ///////
+/* const contenedorWorks = document.getElementById("workGrid");
 
 mostrarWorks(worksList);
 
@@ -126,4 +126,67 @@ filtro1.addEventListener("click" , () => {
 
 filtro2.addEventListener("click" , () => {
     mostrarWorks(worksList , "Retouching Work")
+}) */
+
+
+////// Versión JQUERY //////
+
+const contenedorWorks = $("#workGrid"); 
+
+mostrarWorks(worksList);
+
+
+function mostrarWorks (array , filter ) {
+    $(".workItem-container").remove();
+
+    if (!filter) {
+        for(const work of array){
+            contenedorWorks.prepend(`
+                <div class="workItem-container">
+                    <a class="workItem" href="${work.url}">
+                        <div class="text">
+                            <h2>${work.nombre}</h2>
+                            <p>${work.tipo}</p>
+                        </div>
+                        <img src="${work.img}" alt="${work.alt}">
+                    </a>
+                </div>
+            `)
+        } 
+    } else {
+        const worksArray = array.filter(work => work.tipo === filter)
+        for(const work of worksArray){
+            contenedorWorks.prepend(`
+                <div class="workItem-container">
+                    <a class="workItem" href="${work.url}">
+                        <div class="text">
+                            <h2>${work.nombre}</h2>
+                            <p>${work.tipo}</p>
+                        </div>
+                        <img src="${work.img}" alt="${work.alt}">
+                    </a>
+                </div>
+            `)
+        }
+    }
+}
+
+
+console.log(worksList)
+
+const filtro = $("#All")
+const filtro1 = $("#Branding-Design")
+const filtro2 = $("#Retouching-Work")
+
+filtro.click(() => {
+    mostrarWorks(worksList)
 })
+
+filtro1.click(() => {
+    mostrarWorks(worksList , "Branding Design")
+})
+
+filtro2.click(() => {
+    mostrarWorks(worksList , "Retouching Work")
+})
+
