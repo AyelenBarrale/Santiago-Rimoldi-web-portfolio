@@ -135,7 +135,6 @@ const contenedorWorks = $("#workGrid");
 
 mostrarWorks(worksList);
 
-
 function mostrarWorks (array , filter ) {
     $(".workItem-container").remove();
 
@@ -174,19 +173,17 @@ function mostrarWorks (array , filter ) {
 
 console.log(worksList)
 
-const filtro = $("#All")
-const filtro1 = $("#Branding-Design")
-const filtro2 = $("#Retouching-Work")
 
-filtro.click(() => {
-    mostrarWorks(worksList)
+$("ul li").click(function() {
+    const id = this.id
+    console.log(id)
+
+    if (id === "Branding-Design") {
+        mostrarWorks(worksList , "Branding Design")
+    } else if (id === "Retouching-Work") {
+        mostrarWorks(worksList , "Retouching Work")
+    } else {
+        mostrarWorks(worksList)
+    }
+
 })
-
-filtro1.click(() => {
-    mostrarWorks(worksList , "Branding Design")
-})
-
-filtro2.click(() => {
-    mostrarWorks(worksList , "Retouching Work")
-})
-
