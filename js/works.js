@@ -4,7 +4,7 @@ let worksList = [
         nombre: "Vineyard Dreams",
         tipo: "Retouching Work",
         img: "./../img/P_Vineyard-1.jpg",
-        url: "",
+        url: "./../views/works/vineyard.html",
         alt: "Photo manipulation work about a vineyard"
     },
     {
@@ -12,16 +12,16 @@ let worksList = [
         nombre: "Plan V",
         tipo: "Branding Design",
         img: "./../img/P_PlanV_01.jpg",
-        url: "",
-        alt: "Branding word about travel concept"
+        url: "./../views/works/planv.html",
+        alt: "Branding work about travel concept"
     },
     {
         id: 3,
-        nombre: "Road to Kilimanjaro",
+        nombre: "Lighthouse",
         tipo: "Retouching Work",
-        img: "./../img/P_Kilimanjaro.jpg",
-        url: "",
-        alt: "Experimental photo manipulation work. African trip."
+        img: "./../img/Lighthouse_Portada_Home.jpg",
+        url: "./../views/works/lighthouse.html",
+        alt: "Photo manipulation work that represent a fantasy dream about fishes and a lighthouse"
     },
     {
         id: 4,
@@ -29,39 +29,47 @@ let worksList = [
         tipo: "Branding Design",
         img: "./../img/P_SunsRace03.jpg",
         url: "./../views/works/sunsrace.html",
-        alt: "Branding word for Sun's Race Argentinian Enduro Race"
+        alt: "Branding work for Sun's Race Argentinian Enduro Race"
     },
     {
         id: 5,
-        nombre: "MUT Arquitects",
-        tipo: "Branding Design",
-        img: "./../img/P_Mut-1.jpg",
-        url: "",
-        alt: "Branding word. Argentinian Arquitect Studio MUT"
+        nombre: "Welcome to Utah",
+        tipo: "Retouching Work",
+        img: "./../img/Utah_Portada_Home.jpg",
+        url: "./../views/works/utah.html",
+        alt: "Photo manipulation work where I create a landscape showing a vast desert"
     },
     {
         id: 6,
-        nombre: "Centro Empresario Tartagal",
+        nombre: "Logos Design",
         tipo: "Branding Design",
-        img: "./../img/P_CET_2.jpg",
-        url: "",
-        alt: "Branding word for Centro Empresario Tartagal"
+        img: "./../img/P_Logo_02.jpg",
+        url: "./../views/works/logos.html",
+        alt: "Branding work where show a selection of logos created since 2011"
     },
     {
         id: 7,
-        nombre: "Rimoldi: Personal Brand",
-        tipo: "Branding Design",
-        img: "./../img/P_Logo_02.jpg",
-        url: "",
-        alt: "Branding word for personal brand"
-    },
-    {
-        id: 8,
         nombre: "Forest Encounter",
         tipo: "Retouching Work",
         img: "./../img/P_Forest.jpg",
-        url: "",
+        url: "./../views/works/forest.html",
         alt: "Photo manipulation work about a forest environment"
+    },
+    {
+        id: 8,
+        nombre: "MUT Arquitects",
+        tipo: "Branding Design",
+        img: "./../img/P_Mut-1.jpg",
+        url: "./../views/works/mut.html",
+        alt: "Branding work. Argentinian Arquitect Studio MUT"
+    },
+    {
+        id: 9,
+        nombre: "Deep blue fears",
+        tipo: "Retouching Work",
+        img: "./../img/Shark_Portada_Home.jpg",
+        url: "./../views/works/shark.html",
+        alt: "Photo manipulation work about another animal encounter image but in this case with a more dynamic approach"
     }
 ];
 
@@ -174,7 +182,7 @@ function mostrarWorks (array , filter ) {
 console.log(worksList)
 
 
-$("ul li").click(function() {
+$("ul li").on( "click" , function() {
     const id = this.id
     console.log(id)
 
