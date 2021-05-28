@@ -432,12 +432,20 @@ body {
   .work-container-2 {
     padding: 20% 0;
   }
-
-  .gridwork {
+  .work-container-2 .workGrid {
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
     flex-wrap: wrap;
+  }
+  .work-container-2 .workGrid .workItem-container {
+    width: 100%;
+  }
+
+  .work-container .workGrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-container .workGrid .workItem-container {
+    width: 100%;
   }
 
   .wip {
@@ -486,6 +494,25 @@ body {
   }
   .wip .year {
     text-align: start;
+  }
+
+  .work-container-2 {
+    padding: 20% 0;
+  }
+  .work-container-2 .workGrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-container-2 .workGrid .workItem-container {
+    width: 50%;
+  }
+
+  .work-container .workGrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-container .workGrid .workItem-container {
+    width: 50%;
   }
 
   .line {

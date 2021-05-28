@@ -20,14 +20,25 @@
     //work page mobile
     .work-container-2 {
         padding: 20% 0;
+        .workGrid {
+            display: flex;
+            flex-wrap: wrap;
+            .workItem-container{
+                width: 100%;
+            }
+        }
     }
     //work home and page mobile
-    .gridwork {
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
+    .work-container{
+        .workGrid {
+            display: flex;
+            flex-wrap: wrap;
+            .workItem-container{
+                width: 100%;
+            }
+        }
     }
+    
     //wip page mobile
     .wip {
         margin-top: 25%;
@@ -80,6 +91,28 @@
             text-align: start;
         }
     }
+
+        //work page mobile
+        .work-container-2 {
+            padding: 20% 0;
+            .workGrid {
+                display: flex;
+                flex-wrap: wrap;
+                .workItem-container{
+                    width: 50%;
+                }
+            }
+        }
+        //work home and page mobile
+        .work-container{
+            .workGrid {
+                display: flex;
+                flex-wrap: wrap;
+                .workItem-container{
+                    width: 50%;
+                }
+            }
+        }
 
     //line
     .line {
