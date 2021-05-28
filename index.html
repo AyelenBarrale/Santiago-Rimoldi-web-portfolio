@@ -129,6 +129,22 @@
       </div>
   <!--formulario de contacto--> 
       <div>
+        <form class="form">
+          <div class="form-row">
+            <label for="full-name"></label>
+            <input type="name" name="name" id="full-name" required placeholder="Name">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" required placeholder="Email Address">
+            <label for="subject"></label>
+            <input type="subject" name="subject" id="subject" required placeholder="Subject">
+            <label for="mensaje"></label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="8" placeholder="Message"></textarea>
+            <button type="submit" id="btnEnviar">Send</button>
+      </div>
+      <div>
+        <p id="thanxContact"></p>
+      </div>
+      <!-- <div>
         <form action="SERVER" method="POST" class="form">
           <div class="form-row">
             <label for="full-name"></label>
@@ -142,7 +158,7 @@
             <button type="submit">Send</button>
           </div>
         </form>
-      </div>  
+      </div>   -->
     </section>
   <!--Fin de Form Contacto-->
 
@@ -171,7 +187,8 @@
 
 
     <!-- JS -->
-    <script src="js/works.js"></script>
+    <script src="./js/works.js"></script>
+    <script src="./js/form.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! 
     Option 1: Bootstrap Bundle with Popper 
@@ -183,5 +200,7 @@
     
     <!-- JQUERY -->
       <script src="./js/jquery.js"></script>
+    
+     
   </body>
 </html>
