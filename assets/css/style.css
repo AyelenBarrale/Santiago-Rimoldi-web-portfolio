@@ -465,6 +465,10 @@ body {
     align-content: center;
   }
 
+  .vineyard-container, .utah-container, .shark-container, .sample-container, .lighthouse-container, .forest-container, .sunsrace-container, .logos-container {
+    margin: 0 0 6% 0;
+  }
+
   .footer-container {
     display: block;
     text-align: center;

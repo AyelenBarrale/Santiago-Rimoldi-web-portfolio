@@ -57,6 +57,13 @@
         justify-content: center;
         align-content: center;
     }
+
+    //each work images container
+    .vineyard-container, .utah-container, .shark-container, .sample-container, .lighthouse-container, .forest-container, .sunsrace-container, .logos-container {
+        margin: 0 0 6% 0;
+    }
+
+
     //footer mobile
     .footer-container {
         display: block;
