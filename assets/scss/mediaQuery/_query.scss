@@ -92,24 +92,24 @@
         }
     }
 
-        //work page mobile
+        //work page tablet
         .work-container-2 {
             padding: 20% 0;
             .workGrid {
                 display: flex;
                 flex-wrap: wrap;
                 .workItem-container{
-                    width: 50%;
+                    width: 33,33%;
                 }
             }
         }
-        //work home and page mobile
+        //work home tablet
         .work-container{
             .workGrid {
                 display: flex;
                 flex-wrap: wrap;
                 .workItem-container{
-                    width: 50%;
+                    width: 33,33%;
                 }
             }
         }
@@ -123,5 +123,27 @@
 @media only screen and (min-width: 1160px) and (max-width:1560px){
     .line {
         width: 320px;
+    }
+
+    //work page small desktop
+    .work-container-2 {
+        padding: 20% 0;
+        .workGrid {
+            display: flex;
+            flex-wrap: wrap;
+            .workItem-container{
+                width: 25%;
+            }
+        }
+    }
+    //work home small desktop
+    .work-container{
+        .workGrid {
+            display: flex;
+            flex-wrap: wrap;
+            .workItem-container{
+                width: 25%;
+            }
+        }
     }
 }

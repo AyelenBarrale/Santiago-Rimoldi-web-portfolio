@@ -504,7 +504,7 @@ body {
     flex-wrap: wrap;
   }
   .work-container-2 .workGrid .workItem-container {
-    width: 50%;
+    width: 33, 33%;
   }
 
   .work-container .workGrid {
@@ -512,7 +512,7 @@ body {
     flex-wrap: wrap;
   }
   .work-container .workGrid .workItem-container {
-    width: 50%;
+    width: 33, 33%;
   }
 
   .line {
@@ -523,6 +523,25 @@ body {
 @media only screen and (min-width: 1160px) and (max-width: 1560px) {
   .line {
     width: 320px;
+  }
+
+  .work-container-2 {
+    padding: 20% 0;
+  }
+  .work-container-2 .workGrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-container-2 .workGrid .workItem-container {
+    width: 25%;
+  }
+
+  .work-container .workGrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-container .workGrid .workItem-container {
+    width: 25%;
   }
 }
 
